@@ -452,10 +452,16 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/background_acne.jpg") top center;
-  background-size: cover;
-  position: relative;
+  height: 100vh; /* Set the height to full viewport height */
+  background: url("../img/acnebackground.webp") top center; /* Position the image at the top center */
+  background-size: cover; /* Cover the entire area, may crop */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  position: relative; /* Keep the position relative for child elements */
+  margin: 0; /* Reset any margin */
+  padding: 0; /* Reset any padding */
+  display: flex; /* Optional: to center child elements vertically/horizontally */
+  align-items: center; /* Optional: center child elements vertically */
+  justify-content: center; /* Optional: center child elements horizontally */
 }
 
 #hero:before {
